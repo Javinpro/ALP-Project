@@ -1,0 +1,59 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+.login-container {
+    display: flex;
+    min-height: 100vh;
+}
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-form .form-control {
+    margin-bottom: 1rem;
+}
+.login-form .btn-primary {
+    background-color: #002855;
+    border: none;
+}
+.login-form .btn-primary:hover {
+    background-color: #001f40;
+}
+.login-form .btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #555;
+}
+.login-form .btn-google img {
+    margin-right: 0.5rem;
+}
+
+.btn-full-witdh{
+    width: 100%;
+}
+
+.google-full-witdh{
+    width: 100%;
+}
+
+.login-image {
+    flex: 1;
+    background: url('/img/1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.under-text-form a{
+    text-decoration: none;
+}
+
+.forgot-pass-text a{
+    text-decoration: none;
+}
