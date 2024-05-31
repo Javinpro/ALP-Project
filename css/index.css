@@ -1,0 +1,18 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.btn-login{
+    border: 2px solid #103056;
+    color: #103056;
+    background-color: white;
+}
+
+.btn-signup{
+    background-color: #103056;
+    color: white;
+    border: 0;
+}
+
+

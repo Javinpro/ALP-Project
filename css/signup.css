@@ -57,3 +57,18 @@ body {
 .forgot-pass-text a{
     text-decoration: none;
 }
+
+.name-part{
+    display: flex;
+    gap: 20px;
+}
+
+.name-field{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-field .form-control{
+    margin-bottom: 0px;
+}
