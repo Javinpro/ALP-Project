@@ -1,0 +1,36 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f0f0;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+h2 {
+    font-weight: bold;
+}
+h3 {
+    font-weight: bold;
+}
+.badge-container {
+    margin-top: 10px;
+}
+.badge {
+    background-color: #001f6b;
+    color: white;
+    font-size: 0.9rem;
+    margin-right: 5px;
+}
+footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+.social-icons img {
+    width: 24px;
+    margin: 0 10px;
+}
+.btn-primary {
+    background-color: #103056;
+}
+.nav-link[href="login.html"] {
+    color: #103056;
+}
