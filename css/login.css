@@ -1,59 +1,45 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    background: url('path/to/your/background.jpg') no-repeat center center fixed; /* Tambahkan background */
+    background-size: cover; /* Pastikan background menutupi seluruh halaman */
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
 }
-.login-container {
-    display: flex;
+.container-fluid, .row {
     min-height: 100vh;
 }
-.login-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #ccc; /* Tambahkan garis pembatas */
+    padding: 20px; /* Tambahkan padding */
+    border-radius: 8px; /* Tambahkan border radius */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Tambahkan shadow untuk efek 3D */
+    background: rgba(255, 255, 255, 0.8); /* Tambahkan background putih transparan */
 }
-
-.login-form .form-control {
+.login-container h2 {
+    font-weight: 700;
     margin-bottom: 1rem;
 }
-.login-form .btn-primary {
-    background-color: #002855;
-    border: none;
+.login-container p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
 }
-.login-form .btn-primary:hover {
-    background-color: #001f40;
+.login-container .form-group label {
+    font-weight: 700;
 }
-.login-form .btn-google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #555;
-}
-.login-form .btn-google img {
-    margin-right: 0.5rem;
-}
-
-.btn-full-witdh{
-    width: 100%;
-}
-
-.google-full-witdh{
-    width: 100%;
-}
-
-.login-image {
-    flex: 1;
-    background: url('/img/1.jpg') no-repeat center center;
-    background-size: cover;
-}
-
-.under-text-form a{
+.forgot-password {
+    color: #007bff;
     text-decoration: none;
 }
-
-.forgot-pass-text a{
-    text-decoration: none;
+.forgot-password:hover {
+    text-decoration: underline;
+}
+@media (max-width: 576px) {
+    .login-container {
+        padding: 10px;
+    }
+    .login-container h2 {
+        font-size: 1.5rem;
+    }
 }
