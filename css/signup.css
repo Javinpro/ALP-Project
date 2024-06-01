@@ -1,73 +1,50 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    background: url('path/to/your/background.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
 }
-.login-container {
-    display: flex;
+.container-fluid, .row {
     min-height: 100vh;
 }
-.login-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+.signup-container {
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.9);
 }
-
-.login-form .form-control {
+.signup-container h2 {
+    font-weight: 700;
     margin-bottom: 1rem;
 }
-.login-form .btn-primary {
-    background-color: #002855;
-    border: none;
+.signup-container p {
+    margin-bottom: 1.5rem;
+    color: #6c757d;
 }
-.login-form .btn-primary:hover {
-    background-color: #001f40;
+.signup-container .form-group label {
+    font-weight: 700;
 }
-.login-form .btn-google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #555;
+@media (max-width: 576px) {
+    .signup-container {
+        padding: 10px;
+    }
+    .signup-container h2 {
+        font-size: 1.5rem;
+    }
 }
-.login-form .btn-google img {
-    margin-right: 0.5rem;
+.btn-primary {
+    background-color: #103056;
+    border-color: #103056;
 }
-
-.btn-full-witdh{
-    width: 100%;
-}
-
-.google-full-witdh{
-    width: 100%;
+.btn-primary:hover{
+    background-color: #103056;
+    border-color: #103056;
 }
 
-.login-image {
-    flex: 1;
-    background: url('/img/2.jpg') no-repeat center center;
-    background-size: cover;
-}
-
-.under-text-form a{
-    text-decoration: none;
-}
-
-.forgot-pass-text a{
-    text-decoration: none;
-}
-
-.name-part{
-    display: flex;
-    gap: 20px;
-}
-
-.name-field{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
 
 .name-field .form-control{
     margin-bottom: 0px;
