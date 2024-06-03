@@ -5,6 +5,9 @@ body {
 .navbar-brand {
     font-weight: bold;
 }
+.nav-link {
+    color: #103056 !important;
+}
 h2 {
     font-weight: bold;
 }
