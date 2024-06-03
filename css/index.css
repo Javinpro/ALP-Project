@@ -1,18 +1,47 @@
-* {
+body {
     font-family: 'Outfit', sans-serif;
-    font-size: 18px;
 }
-
-.btn-login{
-    border: 2px solid #103056;
-    color: #103056;
-    background-color: white;
+.navbar-brand {
+    font-weight: bold;
 }
-
-.btn-signup{
-    background-color: #103056;
+.nav-link {
+    color: #103056 !important;
+}
+.header-section {
+    background-image: url('hero-section.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: white;
-    border: 0;
 }
+.btn-outline-primary {
+    border-color: #103056;
+    color: #103056;
+}
+.btn-outline-primary:hover{
+    background-color: white;
+    color: #103056;
+}
+.btn-primary{
+    background-color: #103056;
+    border: none;
+}
+.island-section img, .explore-section img, .travel-inspiration img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e7e7;
+}
+footer p {
+    margin: 0;
+}
+
+
 
 
