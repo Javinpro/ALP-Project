@@ -1,51 +1,69 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    background: url('path/to/your/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Outfit', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: Outfit;
 }
-.container-fluid, .row {
-    min-height: 100vh;
+
+.out-layer {
+    display: flex;  
+    padding: 10px;
+    /* height: 125vh; */
 }
-.signup-container {
-    width: 90%;
-    max-width: 400px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background: rgba(255, 255, 255, 0.9);
+
+.side-right {
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    align-content: center;
+    height: 120vh;
+
 }
-.signup-container h2 {
-    font-weight: 700;
-    margin-bottom: 1rem;
+
+.side-left {
+    flex: 1;
+    /* position: -webkit-sticky; */
+    position: sticky;
+    top: 10px; /* Jarak dari atas saat elemen menjadi lengket */
+    max-height: 97vh; /* Membatasi tinggi maksimal */
+    text-align: center;
+    justify-content: center; /*nama saya adalah Franklin Jaya, jgangan lupa*/
+    align-items: center;
 }
-.signup-container p {
-    margin-bottom: 1.5rem;
-    color: #6c757d;
+
+.side-left img{
+    border-radius: 15px;
+    max-width: 100%; /* Membatasi lebar gambar maksimal setinggi kontainer */
+    max-height: 100%; /* Membatasi tinggi gambar maksimal setinggi kontainer */
+    width: 100%; /* Menentukan ukuran gambar relatif terhadap div-nya */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
 }
-.signup-container .form-group label {
-    font-weight: 700;
+
+.btn-login{
+    background-color: #103056;
+    border: 0;
+    color: white;  
+    width: 100%; 
+    border-radius: 10px;
 }
-@media (max-width: 576px) {
-    .signup-container {
+
+.forgot-pass p{
+    color: #103056;
+    cursor: pointer;
+}
+
+.text-under-button a{
+    text-decoration: none;
+    color: #103056;
+}
+
+
+/* @media (max-width: 576px) {
+    .login-container {
         padding: 10px;
     }
-    .signup-container h2 {
+    .login-container h2 {
         font-size: 1.5rem;
     }
-}
-.btn-primary {
-    background-color: #103056;
-    border-color: #103056;
-}
-.btn-primary:hover{
-    background-color: #103056;
-    border-color: #103056;
-}
-
-
-.name-field .form-control{
-    margin-bottom: 0px;
-}
+} */

@@ -1,45 +1,67 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    background: url('path/to/your/background.jpg') no-repeat center center fixed; /* Tambahkan background */
-    background-size: cover; /* Pastikan background menutupi seluruh halaman */
-    font-family: 'Outfit', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: Outfit;
 }
-.container-fluid, .row {
-    min-height: 100vh;
+
+
+.out-layer {
+    display: flex;  
+    padding: 10px;
+    height: 100vh;
 }
-.login-container {
-    width: 90%;
-    max-width: 400px;
-    border: 1px solid #ccc; /* Tambahkan garis pembatas */
-    padding: 20px; /* Tambahkan padding */
-    border-radius: 8px; /* Tambahkan border radius */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Tambahkan shadow untuk efek 3D */
-    background: rgba(255, 255, 255, 0.8); /* Tambahkan background putih transparan */
+
+.side-right {
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 20px;
+    /* margin-top: 80px; */
+    border-radius: 10px;
+    align-content: center;
+
 }
-.login-container h2 {
-    font-weight: 700;
-    margin-bottom: 1rem;
+
+.side-left {
+    flex: 1;
+    text-align: center;
+    justify-content: center; /*nama saya adalah Franklin Jaya, jgangan lupa*/
+    align-items: center;
 }
-.login-container p {
-    margin-bottom: 1.5rem;
-    color: #6c757d;
+
+.side-left img{
+    border-radius: 15px;
+    max-width: 100%; /* Membatasi lebar gambar maksimal setinggi kontainer */
+    max-height: 100%; /* Membatasi tinggi gambar maksimal setinggi kontainer */
+    width: 100%; /* Menentukan ukuran gambar relatif terhadap div-nya */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+
 }
-.login-container .form-group label {
-    font-weight: 700;
+
+.btn-login{
+    background-color: #103056;
+    border: 0;
+    color: white;  
+    width: 100%; 
+    border-radius: 10px;
 }
-.forgot-password {
-    color: #007bff;
+
+.forgot-pass p{
+    color: #103056;
+    cursor: pointer;
+}
+
+.text-under-button a{
     text-decoration: none;
+    color: #103056;
 }
-.forgot-password:hover {
-    text-decoration: underline;
-}
-@media (max-width: 576px) {
+
+
+/* @media (max-width: 576px) {
     .login-container {
         padding: 10px;
     }
     .login-container h2 {
         font-size: 1.5rem;
     }
-}
+} */
