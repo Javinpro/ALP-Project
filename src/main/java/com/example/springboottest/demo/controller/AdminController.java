@@ -13,7 +13,11 @@ public class AdminController {
 
     private AdminRepository adminRepository;
 
-    @GetMapping("/")
+    public AdminController(AdminRepository adminRepository) {
+        this.adminRepository = adminRepository;
+    }
+
+    @GetMapping
     public List<Admin> getAllAdmins() {
         return adminRepository.findAll();
     }

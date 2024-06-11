@@ -14,6 +14,10 @@ public class GalleryController {
 
     private GalleryRepository galleryRepository;
 
+    public GalleryController(GalleryRepository galleryRepository) {
+        this.galleryRepository = galleryRepository;
+    }
+
     @GetMapping
     public List<Gallery> getAllGalleries() {
         return galleryRepository.findAll();
