@@ -1,0 +1,36 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+.hero {
+    background: url('img/img-lanjukang/hero.png') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.morning-activity {
+    background-color: #C3BCAA;
+}
+.snorkeling-activity {
+    background-color: #2DAB95;
+    color: white;
+}
+.night-activity {
+    background-color: #121212;
+    color: white;
+}
+.card-title {
+    font-weight: bold;
+}
