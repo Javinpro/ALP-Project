@@ -1,17 +1,9 @@
-// //Function to open modal
-// function openModal(){
-//     document.getElementById('forgotPassModal').style.display = 'block';
-// }
+// Toggle password visibility
+document.querySelector('.toggle-pass').addEventListener('click', function() {
+    const passwordField = document.getElementById('inputPass');
+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', type);
 
-// //Function to close the modal 
-// function closeModal(){
-//     document.getElementById('forgotPassModal').style.display = 'none';
-// }
-
-// //Handle the forgot password form submission
-// document.getElementById('forgotPassForm').addEventListener('submit', function(event){ 
-//     event.preventDefault();
-//     //Here you would normally send the reset request to the server
-//     alert('Password reset link has been sent to your email address.');
-//     closeModal();
-// });
+    // Toggle the eye icon
+    this.textContent = type === 'password' ? 'visibility' : 'visibility_off';
+});

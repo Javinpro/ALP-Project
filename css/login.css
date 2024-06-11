@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
 
 * {
-    font-family: Outfit;
+    font-family: 'Outfit';
 }
 
 
@@ -56,6 +58,17 @@
     color: #103056;
 }
 
+.pass-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
 
 /* @media (max-width: 576px) {
     .login-container {
