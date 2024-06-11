@@ -41,7 +41,17 @@ footer {
 footer p {
     margin: 0;
 }
-
-
-
+.explore-section .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-section .col-md-3 {
+    padding: 0;
+}
+.explore-section .img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
