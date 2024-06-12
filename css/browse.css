@@ -37,3 +37,33 @@ footer {
 .nav-link[href="login.html"] {
     color: #103056;
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.row.my-4 {
+    animation: slideIN 1s ease-in-out;
+}
+.social-icons a {
+    transition: transform 0.3s;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+}
