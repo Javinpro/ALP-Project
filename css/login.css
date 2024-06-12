@@ -78,3 +78,51 @@
         font-size: 1.5rem;
     }
 } */
+/* CSS */
+/* Styles for small devices (phones) */
+@media only screen and (max-width: 600px) {
+    /* Add your styles for small devices here */
+    body {
+      font-size: 14px;
+    }
+  
+    .login-container {
+      padding: 10px;
+    }
+  
+    .login-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Styles for medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Add your styles for medium devices here */
+    body {
+      font-size: 16px;
+    }
+  
+    .login-container {
+      padding: 20px;
+    }
+  
+    .login-container h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Styles for large devices (desktops) */
+  @media only screen and (min-width: 1025px) {
+    /* Add your styles for large devices here */
+    body {
+      font-size: 18px;
+    }
+  
+    .login-container {
+      padding: 30px;
+    }
+  
+    .login-container h2 {
+      font-size: 2.5rem;
+    }
+  }
