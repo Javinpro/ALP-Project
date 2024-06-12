@@ -1,164 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-* {
+::after,
+::before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+body {
     font-family: 'Outfit';
 }
 
-.user-img {
-    width: 50px;
-    border-radius: 100%;
-    border: 1px solid #eee;
-
-
+.wrapper {
+    display: flex;
 }
 
-.sidebar {
-    position: absolute;
+.main {
+    margin-left: 85px;
+    padding: 20px;
+    min-height: 100vh;
+    width: calc(100% - 110px);
+    margin-top: 1rem;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #103056;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 80px;
-    background-color: #103056;
-    padding: .4rem .8rem;
-    transition: all 0.5s ease;
+    height: 100%;    
 }
 
-.sidebar.active ~ .main-content {
-    left: 250px;
-    width: calc(100% - 250px);
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
 }
 
-.sidebar.active {
-    width: 250px;
-}
-
-.sidebar #btn {
-    position: absolute;
-    color: #fff;
-    top: .4rem;
-    left: 50%;
-    font-size: 1.2rem;
-    line-height: 50px;
-    transform: translateX(-50%);
+#toggle-btn {
+    background-color: transparent;
     cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
 }
 
-.sidebar.active #btn {
-    left: 90%;
+#toggle-btn i{
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 
-.sidebar .top .logo {
-    color: #fff;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    align-items: center;
-    pointer-events: none;
-    opacity: 0;
+.sidebar-logo {
+    margin: auto 0;
 }
 
-.sidebar.active .top .logo {
-    opacity: 1;
+.sidebar-logo img {
+    color: #ffffff;
+    font-size: 1.15rem;
 }
 
-.top .logo i {
-    font-size: 2rem;
-    margin-right: 5px;
-}
-
-.user {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0;
-}
-
-.user p {
-    color: #fff;
-    opacity: 1;
-    margin-left: 1rem;
-}
-
-.bold {
-    font-weight: 600;
-}
-
-.sidebar p {
-    opacity: 0;
-}
-
-.sidebar.active p {
-    opacity: 1;
-}
-
-.sidebar ul li {
-    position: relative;
-    list-style-type: none;
-    height: 50px;
-    width: 90%;
-    margin: 0.8rem auto;
-    line-height: 50px;
-}
-
-.sidebar ul li a {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 0.3rem;
-}
-
-.sidebar ul li a:hover {
-    background-color: #fff;
-    color: #103056;
-}
-
-.sidebar ul li a i {
-    min-width: 50px;
-    text-align: center;
-    height: 50px;
-    border-radius: 12px;
-    line-height: 50px;
-}
-
-.sidebar .nav-item {
-    opacity: 0;
-}
-
-.sidebar.active .nav-item {
-    opacity: 1;
-}
-
-.sidebar ul li .tooltip{
-    position: absolute;
-    left: 125px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
-    border-radius: .6rem;
-    padding: .4rem 1.2rem;
-    line-height: 1.8rem;
-    z-index: 20;
-    opacity: 0;
-}
-
-.sidebar ul li:hover .tooltip {
-    opacity: 1;
-}
-
-.sidebar.active ul li .tooltip {
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
     display: none;
 }
 
-.main-content {
-    position: relative;
-    background-color: #eee;
-    min-height: 100vh;
-    top: 0;
-    left: 80px;
-    transition: all 0.5s ease;
-    width: calc(100% - 80px);
-    padding: 1rem;
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
 }
+
+a.sidebar-link {
+    padding: .8rem 1.625rem;
+    color: #ffffff;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.18rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover{
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #ffffff;
+}
+
+.sidebar-footer {
+    margin-bottom: 1rem;
+}
+
+/* add user button section */
+.add-user {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.btn-add-user {
+    background-color: #103056;
+    border: 2px solid #103056;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center; /* Align items (icon and text) vertically */
+    text-decoration: none; /* Remove underline from link */
+    color: inherit; /* Use the current text color */
+    padding: 10px; /* Add some padding for a better appearance */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change with ease effect */
+}
+
+.btn-add-user:hover{
+    background-color: #ffffff;
+    color: #103056;
+    border: 2px solid #103056;
+}
+
+.btn-add-user:hover i{
+    color: #103056;
+}
+
+.btn-add-user:hover span{
+    color: #103056;
+}
+
+.btn-add-user i {
+    font-size: 15px; /* Set icon size */
+    margin-right: 8px; /* Add some space between icon and text */
+    color: #ffffff  ;
+}
+
+.btn-add-user span {
+    font-size: 16px; /* Set text size */
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* card user section */
+.card-img-top {
+    width: 65%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.card {
+    padding: 1em .5em .5em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border: 0;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.btn-user-card {
+    background-color: #103056;
+    color: #ffffff;
+    font-weight: 450;
+    border: 2px solid #103056;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change with ease effect */
+}
+
+.btn-user-card:hover {
+    background-color: #ffffff;
+    border: 2px solid #103056;
+    color: #103056;
+}
+
+
