@@ -33,3 +33,26 @@
     margin: 0 15px; /* Adjust as needed */
   }
   
+.wrapper {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.title-text h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.title-text h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000; /* Anda bisa mengubah warna sesuai keinginan */
+}
+
+

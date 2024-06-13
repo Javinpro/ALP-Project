@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+body {
+    font-family: 'Outfit';
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    margin-left: 85px;
+    padding: 20px;
+    min-height: 100vh;
+    width: calc(100% - 110px);
+    margin-top: 1rem;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #103056;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;    
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+#toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+#toggle-btn i{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo img {
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .8rem 1.625rem;
+    color: #ffffff;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.18rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover{
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #ffffff;
+}
+
+.sidebar-footer {
+    margin-bottom: 1rem;
+}
+
+.btn-add-user{
+    background-color: #41B06E;
+    border: 2px solid #41B06E;
+    color: white;  
+    width: 20%; 
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change with ease effect */  
+}
+
+.btn-add-user:hover{
+    background-color: #ffffff;
+    border: 2px solid #41B06E;
+    color: #41B06E;  
+}
+
+.btn-reset-user{
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+    color: white;  
+    width: 20%; 
+    border-radius: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color change with ease effect */  
+}
+
+.btn-reset-user:hover{
+    background-color: #ffffff;
+    border: 2px solid #FF0000;
+    color: #FF0000;  
+}
+
+.pass-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
