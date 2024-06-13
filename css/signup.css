@@ -8,6 +8,7 @@
 .out-layer {
     display: flex;  
     padding: 10px;
+    min-height: 100vh;
     /* height: 125vh; */
 }
 
@@ -78,19 +79,41 @@
     align-items: center;
 }
 
+/* Media query for mobile view */
 @media (max-width: 768px) {
-    .side-left, .side-right {
-        flex: 100%;
-        max-width: 100%;
+    .out-layer {
+        flex-direction: column;
+        align-items: center;
     }
-    .side-right {
-        order: 1;
-    }
+
     .side-left {
-        order: 2;
-        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+
+    .side-right {
+        position: absolute;
+        top: 50%;
+        width: 90%;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(-50%);
+    }
+
+    .side-left img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 }
+
+
 
 
 
@@ -105,34 +128,3 @@
 
 /* CSS */
 /* Styles for small devices (phones) */
-@media only screen and (max-width: 600px) {
-    .signup-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .signup-container img {
-      margin-top: 20px;
-      width: 80%;
-      max-width: 300px;
-    }
-  }
-  
-  /* Styles for medium devices (tablets) */
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .signup-container img {
-      margin-top: 30px;
-      width: 60%;
-      max-width: 400px;
-    }
-  }
-  
-  /* Styles for large devices (desktops) */
-  @media only screen and (min-width: 1025px) {
-    .signup-container img {
-      margin-top: 40px;
-      width: 50%;
-      max-width: 500px;
-    }
-  }
