@@ -1,58 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-* {
-    font-family: Outfit;
+body {
+    font-family: 'Outfit', sans-serif;
 }
-
-.btn-login-nav a{
+.navbar-brand {
+    font-weight: bold;
+}
+.nav-link {
+    color: #103056 !important;
+}
+.btn-outline-primary {
+    border-color: #103056;
+    color: #103056;
+}
+.btn-outline-primary:hover{
     background-color: white;
     color: #103056;
-    border: 2px solid #103056;
-    text-decoration: none;
 }
-
-.btn-signup-nav a{
+.btn-primary{
     background-color: #103056;
-    color: white;
-    border: 2px solid #103056;
-    text-decoration: none;
+    border: none;
 }
-
-.navbar{
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-item {
-    margin: 0 15px; /* Adjust as needed */
-  }
-  
-.wrapper {
+.gallery-container {
     text-align: center;
-    margin-top: 70px;
+    margin: 20px;
 }
-
-.title-text h1 {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.gallery-subtitle {
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
-
-.title-text h1::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #000; /* Anda bisa mengubah warna sesuai keinginan */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
 }
-
+.gallery-item {
+    position: relative;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.load-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.load-more:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e7e7e7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
 
