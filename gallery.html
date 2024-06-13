@@ -39,6 +39,29 @@
     <div class="gallery-title">Our Gallery</div>
     <div class="gallery-subtitle">Capture Your Moments with expSulawesi</div>
     <div class="gallery-grid" id="gallery-grid">
+      <!-- <?php
+                // Connection to the database
+                $conn = new mysqli("your_server", "your_username", "your_password", "your_database");
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+
+                // Query to fetch images from the database
+                $sql = "SELECT image_url FROM gallery_images LIMIT 9"; // Adjust query as needed
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo '<div class="gallery-item">';
+                        echo '<img src="'.$row["image_url"].'" alt="Gallery Image">';
+                        echo '</div>';
+                    }
+                } else {
+                    echo "No images found.";
+                }
+
+                $conn->close();
+            ?> -->
     </div>
     <a href="#" class="load-more" id="load-more">Load More</a>
   </div>
