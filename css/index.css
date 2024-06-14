@@ -1,22 +1,231 @@
+/* General Styles */
 body {
     font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
 }
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 0;
+}
+
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
+
 .nav-link {
+    font-weight: 700;
     color: #103056 !important;
 }
+
+.nav-link:hover {
+    color: #103056 !important;
+}
+
+.form-inline img.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Header Section */
 .header-section {
-    background-image: url('hero-section.png');
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+/* Explore Section */
+.explore-section {
+    background-color: #fff;
+}
+
+.explore-section h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.explore-section .img-fluid {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Island Section */
+.island-section img.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.island-section h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.island-section p {
+    margin-bottom: 15px;
+}
+
+/* Card Inspiration Section */
+.card-inspiration {
+    background-color: #e9ecef;
+    padding: 40px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-article {
+    background-color: white;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card-article:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-data {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #103056;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #103056;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #103056;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: #103056;
+}
+.btn-outline-success {
+    color: #103056;
+    border-color: #103056;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #103056;
+    border-color: #103056;
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+    color: #103056;
+    background-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #103056;
+    border-color: #103056;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.my-sm-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header-section .btn-primary {
+    background-color: #103056;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.explore-section img, .island-section img {
+    width: 100%;
+    height: auto;
 }
 .btn-outline-primary {
     border-color: #103056;
@@ -30,173 +239,3 @@ body {
     background-color: #103056;
     border: none;
 }
-.island-section img, .explore-section img, .travel-inspiration img {
-    width: 100%;
-    height: auto;
-}
-footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #e7e7e7;
-}
-footer p {
-    margin: 0;
-}
-.explore-section .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.explore-section .col-md-3 {
-    padding: 0;
-}
-.explore-section .img-fluid {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.card-inspiration {
-    display: grid;
-    place-items: center;
-    margin-inline: 1.5rem;
-    padding-block: 5rem;
-}
-.card-container {
-    display: grid;
-    row-gap: 3.5rem;
-}
-.card-article {
-    position: relative;
-    overflow: hidden;
-}
-.card-img {
-    width: 328px;
-    border: 1.5rem;
-}
-.card-data {
-    width: 280px;
-    background-color: #103056;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0%, .15);
-    border-radius: 1rem;
-    position: absolute;
-    bottom: -9rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity: 0;
-    transition: opacity 1s 1s;
-}
-.card-description {
-    display: block;
-    font-size: small;
-    margin-bottom: .25rem;
-    color: white;  
-}
-.card-title {
-    font-size: var(--h2-font-size);
-    font-weight: 500;
-    color: white;
-    margin-bottom: .75rem;
-}
-.card-button {
-    text-decoration: none;
-    font-size: small;
-    font-weight: 500;
-    color: white;
-}
-.card-button:hover{
-    text-decoration: underline;
-}
-.card-article:hover .card-data {
-    animation: show-data 1s forwards;
-    opacity: 1;
-    transition: opacity .3s;
-}
-.card-article:hover{
-    animation: remove-overflow 2s forwards;
-}
-.card-article:not(:hover){
-    animation: show-overflow 2s forwards;
-}
-.card-article:not(:hover) .card-data{
-    animation: remove-data 1s forwards;
-}
-@keyframes show-data{
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(-7rem);
-    }
-}
-@keyframes remove-overflow{
-    to {
-        overflow: initial;
-    }
-}
-@keyframes remove-data{
-    0%{
-        transform: translateY(-7rem);
-    }
-    50%{
-        transform: translateY(-10rem);
-    }
-    100%{
-        transform: translateY(.5rem);
-    }
-}
-@keyframes show-overflow{
-    0%{
-        overflow: initial;
-        pointer-events: none;
-    }
-    50%{
-        overflow: hidden;
-    }
-}
-@media screen and (max-width: 340px){
-    .container{
-        margin-inline: 1rem;
-    }
-    .card-data{
-        width: 250px;
-        padding: 1rem;
-    }
-}
-@media screen and (min-width: 768px){
-    .card-container{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
-}
-@media screen and (min-width: 1120px){
-    .card-inspiration {
-     height: 100vh;
-    }
-    .card-container{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .card-img{
-        width: 348px;
-    }
-    .card-data{
-        width: 316px;
-        padding-inline: 2.5rem;
-    }
-}
-/* CSS */
-@media screen and (max-width: 768px) {
-    .explore-section .row {
-      flex-wrap: wrap;
-    }
-  
-    .explore-section .col-md-3 {
-      width: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .explore-section .col-md-3 {
-      width: 100%;
-    }
-  }
