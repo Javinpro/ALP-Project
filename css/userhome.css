@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 700;
+    color: #103056 !important;
+}
+
+.nav-link:hover {
+    color: #103056 !important;
+}
+
+.form-inline img.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Header Section */
+.header-section {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.header-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.header-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+/* Explore Section */
+.explore-section {
+    background-color: #fff;
+}
+
+.explore-section h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.explore-section .img-fluid {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Island Section */
+.island-section img.img-fluid {
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.island-section h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.island-section p {
+    margin-bottom: 15px;
+}
+
+/* Card Inspiration Section */
+.card-inspiration {
+    background-color: #e9ecef;
+    padding: 40px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-article {
+    background-color: white;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card-article:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-data {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #103056;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #103056;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #103056;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: #103056;
+}
+.btn-outline-success {
+    color: #103056;
+    border-color: #103056;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #103056;
+    border-color: #103056;
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+    color: #103056;
+    background-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #103056;
+    border-color: #103056;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.my-sm-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}

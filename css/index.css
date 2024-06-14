@@ -171,7 +171,7 @@ footer p {
 }
 @media screen and (min-width: 1120px){
     .card-inspiration{
-        height: 100vh;
+        /* height: 100vh; */
     }
     .card-container{
         grid-template-columns: repeat(3, 1fr);
