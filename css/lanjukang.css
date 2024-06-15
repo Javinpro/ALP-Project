@@ -1,5 +1,21 @@
 body {
     font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.nav-link {
+    font-weight: 700;
+    color: #103056 !important;
+}
+.nav-link:hover {
+    color: #103056 !important;
 }
 .hero {
     background: url('img/img-lanjukang/hero.png') no-repeat center center;
@@ -47,14 +63,6 @@ body {
 .hero-overlay {
     animation: slideIn 1s ease-in-out;
 }
-@keyframes scaleUp {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1);
-    }
-}
 .hero-overlay .btn-primary {
     animation: scaleUp 0.5s ease-in-out infinite alternate;
 }
@@ -63,4 +71,16 @@ body {
 }
 .card:hover {
     transform: scale(1.05);
+}
+.btn-outline-primary {
+    border-color: #103056;
+    color: #103056;
+}
+.btn-outline-primary:hover{
+    background-color: white;
+    color: #103056;
+}
+.btn-primary{
+    background-color: #103056;
+    border: none;
 }

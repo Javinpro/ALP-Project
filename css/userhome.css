@@ -217,25 +217,3 @@ footer .social-icons img {
     margin-top: 0;
     margin-bottom: 0;
 }
-.header-section .btn-primary {
-    background-color: #103056;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-}
-.explore-section img, .island-section img {
-    width: 100%;
-    height: auto;
-}
-.btn-outline-primary {
-    border-color: #103056;
-    color: #103056;
-}
-.btn-outline-primary:hover{
-    background-color: white;
-    color: #103056;
-}
-.btn-primary{
-    background-color: #103056;
-    border: none;
-}
