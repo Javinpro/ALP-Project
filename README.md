@@ -57,29 +57,29 @@ Website ini dibangun dengan menggunakan :
 
 
 ## Installation
-## Installing Laragon 
-## Step 1
+### Installing Laragon 
+### Step 1
 - Kunjungi situs resmi [laragon](https://laragon.org/download/)
 - Klik tombol Download
 - Pilih versi Laragon yang anda butuhkan, namun pada umumnya, versi 'Full' yang disarankan karena mencakup semua fitur dan paket
 - Klik tombol Download untuk memulai pengunduhan file installer Laragon
 
-## Step 2
+### Step 2
 - Jalankan installer dengan membuka file installer yang telah diunduh
 - Tentukan direktori tempat untuk menginstal Laragon, lokasi default biasanya di 'C:\Laragon'
 - Ikuti pentunjuk yang diberikan, biasanya hanya perlu mengklik 'Next' beberapa kali dan menyetujui perjanjian lisensi
 - Setelah semua langkah penginstalan selesai, klik 'Finish'
 
-## Step 3
+### Step 3
 - Jalankan Laragon melalui shortcut di Desktop atau bisa juga dari menu Start
 - Untuk memulai layanan, klik tombol 'Start All'
 
-## Step 4
+### Step 4
 - Buka browser web dan akses 'http://localhost' untuk memastikan server web berjalan dengan baik
 - Akses 'http://localhost/phpmyadmin' untuk memastikan MySQL berjalan, database dapat dikelola di phpMyAdmin
 
-## Installing Bootstrap
-## Step 1
+### Installing Bootstrap
+### Step 1
 - Kunjungi situs resmi [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/download/) atau versi lainnya
 - Klik tombol download, akan disuguhkan opsi :
 - Compiled CSS and JS: File CSS dan JavaScript Bootstrap yang telah dikompilasi dan siap digunakan
@@ -88,87 +88,65 @@ Website ini dibangun dengan menggunakan :
 
 - Klik tombol Download pada opsi yang anda pilih untuk memulai instalasi
 
-## Step 2
+### Step 2
 - Download via CDN : salin tautan berikut ke dalam '<head>' HTML anda :
+```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+```
 - Pastikan untuk menyesuaikan link CDN dengan versi Bootstrap yang anda pilih 
 
 - Jika anda mengunduh file Bootstrap, ekstrak file tersebut ke dalam direktori proyek anda
 - Link CSS dan JavaScript Bootstrap di dokumen HTML anda seperti ini:
+```html
 <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
 <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+```
 - Gantilah path/to/bootstrap dengan jalur yang sesuai ke file Bootstrap di direktori proyek anda
 
-## Installing Spring Boot
-## Syarat
+### Installing Spring Boot
+### Syarat
 Sebelum memulai, pastikan anda telah menginstal : 
 - Java Development Kit (JDK): Anda memerlukan JDK 8 atau yang lebih baru
 - Maven: Alat manajemen proyek dan build automation
 - Visual Studio Code (VS Code): IDE yang akan Anda gunakan
 
-## Step 1
+### Step 1
 - Kunjungi situs web [Oracle](https://www.oracle.com/java/technologies/downloads/#java11) untuk menginstal JDK
 - Jalankan file instalasi dan ikuti instruksi untuk menyelesaikan instalasi
 - Setelah instalasi selesai, tambahkan JAVA_HOME ke variabel environment sistem anda.
 
-## Step 2
+### Step 2
 - Kunjungi situs [Maven](https://maven.apache.org/download.cgi) untuk menginstal Maven, dan unduk versi terbaru
 - Ekstrak arsip yang diunduh ke direktori yang anda pilih
 - Tambahkan MAVEN_HOME ke variabel environment sistem Anda dan tambahkan MAVEN_HOME\bin ke variabel PATH
 
-## Step 3
+### Step 3
 - Kunjungi situs [Visual Studio Code](https://code.visualstudio.com/) untuk menginstal Visual Studio Code, dan unduk versi terbaru
 - Jalankan file instalasi dan ikuti instruksi untuk menyelesaikan instalasi
 
-## Step 4
+### Step 4
 - Buka Spring Initializr di browser anda
 - Konfigurasi proyek anda dengan mengisi informasi seperti Project, Language, Spring Boot version, Project Metadata, dan Dependencies
 - Klik tombol Generate untuk mengunduh proyek Spring Boot yang telah dikonfigurasi
 - Ekstrak proyek yang diunduh ke direktori pilihan anda
 - Buka VS Code dan pilih File > Open Folder untuk membuka direktori proyek Spring Boot anda
 
-## Step 5
+### Step 5
 - Buka VS Code jika belum terbuka
 - Klik ikon Extensions di bilah sisi kiri atau tekan 'Ctrl+Shift+X'
 - Cari Spring Boot Extension Pack dan klik Install
 
-## Step 6
+### Step 6
 - Buka terminal baru dengan memilih Terminal > New Terminal
 - Pertama-tama navigasi ke direktori proyek
 - Jalankan perintah berikut untuk menjalankan aplikasi Spring Boot:
+```
 ./mvnw spring-boot:run
+```
 
 ## Credit 
 > - Javin E. C. (Project Leader, Front-end Developer, Database Designer)
 > - Muhammad Habbibie Zikrillah (UI/UX Designer)
 > - A. Alfian Tenggara Putra (Front-end Developer)
 > - Excel Marcello Parinussa (Back-end Developer)
-
-
-Di atas adalah contoh penulisan kode HTML di dalam README.md GitHub. Berikut adalah langkah-langkahnya:
-
-1. Mulai dengan menulis tiga backticks (\`\`\`).
-2. Setelah tiga backticks pertama, tambahkan `html` untuk menunjukkan bahwa ini adalah kode HTML.
-3. Tuliskan kode HTML Anda di baris-baris berikutnya.
-4. Akhiri dengan menutup tiga backticks (\`\`\`).
-
-Berikut adalah bagaimana tampilannya di dalam README.md:
-
-## Contoh Kode HTML
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh HTML</title>
-</head>
-<body>
-    <h1>Halo Dunia</h1>
-    <p>Ini adalah paragraf contoh.</p>
-</body>
-</html>
-
-
