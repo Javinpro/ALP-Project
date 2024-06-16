@@ -9,29 +9,29 @@ seperti turis lokal maupun turis internasional. Sehingga dengan website ini, kam
 ![GitHub issues](https://img.shields.io/github/issues/Javinpro/ALP-Project)
 ![GitHub stars](https://img.shields.io/github/stars/Javinpro/ALP-Project)
 
-## Fitur Kami
-## Fitur User Points dan Rewards
+## Fitur Pulauwesi
+### Fitur User Points dan Rewards
 - User akan mendapatkan poin dari setiap foto yang berhasil diunggah di halaman gallery
 - User dapat menukarkan poin yang telah dikumpulkan dengan rewards yang tersedia
 
-## Fitur Gallery 
+### Fitur Gallery 
 - User dapat mengunggah hasil foto jelajahnya di halaman ini
 - Tiap foto yang telah user unggah, akan disetujui terlebih dahulu oleh admin sebelum ditampilkan di halaman gallery
 
-## Fitur Notifications
+### Fitur Notifications
 - Setelah foto tersebut disetujui, user akan mendapatkan notifikasi terkait disetujuinya foto tersebut dan poin yang didapat
 
-## Fitur User Profile
+### Fitur User Profile
 - Di page ini, user dapat mengedit beberapa data profilnya, seperti bio, foto profil, nomor telpon, tanggal lahir, dan alamat
 
-## Fitur Island Information (Browse Page)
+### Fitur Island Information (Browse Page)
 - Menyediakan detail terkait deskripsi, gambar, hingga lokasi map dari tiap - tiap pulau
 - Menyediakan informasi terkait layanan transportasi yang dapat digunakan
 
-## Fitur User Review dan Rating
+### Fitur User Review dan Rating
 - User dapat memberikan ulasan dan rating terkait pulau - pulau yang telah user kunjungi
 
-## Fitur Admin Controls (Hanya untuk admin)
+### Fitur Admin Controls (Hanya untuk admin)
 - Admin dapat mengelola foto yang diunggah oleh user, menyetujui atau menolak foto, dan mengelola poin user
 - Admin juga dapat menambahkan beberapa informasi pulau berupa card di halaman browse, guna untuk memperkenalkan pulau - pulau kecil lainnya kepada user
 
