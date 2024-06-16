@@ -143,5 +143,32 @@ Sebelum memulai, pastikan anda telah menginstal :
 > - Javin E. C. (Project Leader, Front-end Developer, Database Designer)
 > - Muhammad Habbibie Zikrillah (UI/UX Designer)
 > - A. Alfian Tenggara Putra (Front-end Developer)
-> - Excel Marcello Parinussa (Back-end Developer) 
+> - Excel Marcello Parinussa (Back-end Developer)
+
+
+Di atas adalah contoh penulisan kode HTML di dalam README.md GitHub. Berikut adalah langkah-langkahnya:
+
+1. Mulai dengan menulis tiga backticks (\`\`\`).
+2. Setelah tiga backticks pertama, tambahkan `html` untuk menunjukkan bahwa ini adalah kode HTML.
+3. Tuliskan kode HTML Anda di baris-baris berikutnya.
+4. Akhiri dengan menutup tiga backticks (\`\`\`).
+
+Berikut adalah bagaimana tampilannya di dalam README.md:
+
+## Contoh Kode HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh HTML</title>
+</head>
+<body>
+    <h1>Halo Dunia</h1>
+    <p>Ini adalah paragraf contoh.</p>
+</body>
+</html>
+
 
