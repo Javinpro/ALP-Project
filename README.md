@@ -38,7 +38,7 @@ seperti turis lokal maupun turis internasional. Sehingga dengan website ini, kam
 ## Tech 
 Website ini dibangun dengan menggunakan : 
 - [Laragon](https://laragon.org/download/) - sebuah aplikasi pengelolaan server lokal (local server) yang berfokus pada MySQL untuk platform Windows.
-- Mysql - merupakan sistem manajemen basis data relasional (RDBMS) yang populer digunakan untuk menyimpan dan mengelola data dalam berbagai aplikasi maupun web.
+- [Mysql] - merupakan sistem manajemen basis data relasional (RDBMS) yang populer digunakan untuk menyimpan dan mengelola data dalam berbagai aplikasi maupun web.
 - [Visual Studio Code](https://code.visualstudio.com/) - teks editor yang mendukung banyak bahasa pemrograman dan bahasa markup. Dengan adanya beragam extensions sehingga dapat
   mempermudah untuk
   membangun sebuah project.
@@ -64,8 +64,8 @@ Website ini dibangun dengan menggunakan :
 
 
 ## Credit 
-> Javin E. C. (Project Leader, Front-end Developer, Database Designer)
-> Muhammad Habbibie Zikrillah (UI/UX Designer)
-> A. Alfian Tenggara Putra (Front-end Developer)
-> Excel Marcello Parinussa (Back-end Developer) 
+> - Javin E. C. (Project Leader, Front-end Developer, Database Designer)
+> - Muhammad Habbibie Zikrillah (UI/UX Designer)
+> - A. Alfian Tenggara Putra (Front-end Developer)
+> - Excel Marcello Parinussa (Back-end Developer) 
 
