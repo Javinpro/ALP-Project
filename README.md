@@ -53,9 +53,6 @@ Website ini dibangun dengan menggunakan :
 - Bootstrap 5 or later
 - Spring Boot 3.3.0 or later
 
-## Structure
-
-
 ## Installation
 ### Installing Laragon 
 ### Step 1
