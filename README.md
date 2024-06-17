@@ -147,3 +147,4 @@ Sebelum memulai, pastikan anda telah menginstal :
 > - Muhammad Habbibie Zikrillah (UI/UX Designer)
 > - A. Alfian Tenggara Putra (Front-end Developer)
 > - Excel Marcello Parinussa (Back-end Developer)
+> - Calvin Richie Rumendong (Project Manager) 
