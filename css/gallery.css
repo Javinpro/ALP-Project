@@ -1,11 +1,21 @@
 body {
     font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+.navbar {
+    margin-bottom: 0;
 }
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 .nav-link {
+    font-weight: 700;
     color: #103056 !important;
+}
+.nav-link:hover{
+    color:#103056 !important;
 }
 .btn-outline-primary {
     border-color: #103056;
