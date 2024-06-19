@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: 'Outfit';
+    font-size: 15.5px;
+}
+
+/* navbar section */
+.container-fluid a {
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-nav a {
+    margin-top: 5px;
+    font-weight: 550;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-account {
+    margin-right: 20px;
+}
+
+.login-button {
+    background-color: white;
+    border: 2px solid #103056;
+    border-radius: 5px;
+    padding: 9px 20px;
+    margin-right: -10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #103056;
+}
+
+.signup-button {
+    background-color: #103056;
+    border: 2px solid #103056;
+    border-radius: 5px;
+    padding: 9px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* footer section */
+.footer-part {
+    margin-top: 10rem;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 18.5rem;
+    padding: 2rem;
+}
+
+.part-atas-footer {
+    display: flex;
+    align-items: center;
+}
+
+.part-atas-footer img {
+    max-width: 100px;
+    height: auto;
+}
+
+.part-atas-footer p {
+    margin: 0;
+    padding: 0;
+    margin-left: 3rem;
+}
+
+.card-text {
+    margin-top: 1rem;
+}
+
+.button-part{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.button-ig a{
+    background-color: #ffffff;
+    color: #000000; 
+    padding: 15px 12px 15px 12px;
+    border-radius: 50%;
+    border: 2px solid #000000; 
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+/* animasi navbar */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #103056; /* Warna garis */
+    transition: width 0.3s ease-in-out;
+    bottom: 0;
+    left: 0;
+}
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
