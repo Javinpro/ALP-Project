@@ -1,241 +1,174 @@
-/* General Styles */
-body {
-    font-family: 'Outfit', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: 'Outfit';
+    font-size: 15.5px;
 }
 
-/* Navbar Styles */
+/* navbar section */
+.container-fluid a {
+    margin-left: 20px;
+}
+
 .navbar {
-    margin-bottom: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.navbar-brand {
-    font-weight: 700;
-    font-size: 1.5rem;
+.navbar-nav a {
+    margin-top: 5px;
+    font-weight: 550;
 }
 
-.nav-link {
-    font-weight: 700;
-    color: #103056 !important;
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
-.nav-link:hover {
-    color: #103056 !important;
+.button-account {
+    margin-right: 20px;
 }
 
-.form-inline img.profile-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.login-button {
+    background-color: white;
+    border: 2px solid #103056;
+    border-radius: 5px;
+    padding: 9px 20px;
+    margin-right: -10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #103056;
 }
 
-/* Header Section */
-.header-section {
-    height: 400px;
+.signup-button {
+    background-color: #103056;
+    border: 2px solid #103056;
+    border-radius: 5px;
+    padding: 9px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* footer section */
+.footer-part {
+    margin-top: 10rem;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 18.5rem;
+    padding: 2rem;
+}
+
+.part-atas-footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
 }
 
-.header-section h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.header-section .btn {
-    font-size: 1.2rem;
-    padding: 10px 20px;
-}
-
-/* Explore Section */
-.explore-section {
-    background-color: #fff;
-}
-
-.explore-section h2 {
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-
-.explore-section .img-fluid {
-    max-height: 200px;
-    object-fit: cover;
-}
-
-/* Island Section */
-.island-section img.img-fluid {
-    max-height: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-.island-section h3 {
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.island-section p {
-    margin-bottom: 15px;
-}
-
-/* Card Inspiration Section */
-.card-inspiration {
-    background-color: #e9ecef;
-    padding: 40px 0;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card-article {
-    background-color: white;
-    margin: 10px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.card-article:hover {
-    transform: translateY(-10px);
-}
-
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-data {
-    padding: 20px;
-    text-align: center;
-}
-
-.card-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.card-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #103056;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.card-button:hover {
-    background-color: #103056;
-}
-
-/* Footer */
-footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-footer .social-icons img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-/* Back to Top Button */
-.back-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #103056;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.back-to-top:hover {
-    background-color: #103056;
-}
-.btn-outline-success {
-    color: #103056;
-    border-color: #103056;
-    background-color: transparent;
-}
-
-.btn-outline-success:hover {
-    color: #fff;
-    background-color: #103056;
-    border-color: #103056;
-}
-
-.btn-outline-success:focus, .btn-outline-success.focus {
-    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-}
-
-.btn-outline-success.disabled, .btn-outline-success:disabled {
-    color: #103056;
-    background-color: transparent;
-}
-
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
-.show > .btn-outline-success.dropdown-toggle {
-    color: #fff;
-    background-color: #103056;
-    border-color: #103056;
-}
-
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-success.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-}
-
-.mr-2 {
-    margin-right: 0.5rem;
-}
-
-.my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.my-sm-0 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.header-section .btn-primary {
-    background-color: #103056;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-}
-.explore-section img, .island-section img {
-    width: 100%;
+.part-atas-footer img {
+    max-width: 100px;
     height: auto;
 }
-.btn-outline-primary {
-    border-color: #103056;
-    color: #103056;
+
+.part-atas-footer p {
+    margin: 0;
+    padding: 0;
+    margin-left: 3rem;
 }
-.btn-outline-primary:hover{
-    background-color: white;
-    color: #103056;
+
+.card-text {
+    margin-top: 1rem;
 }
-.btn-primary{
-    background-color: #103056;
-    border: none;
+
+.button-part{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.button-ig a{
+    background-color: #ffffff;
+    color: #000000; 
+    padding: 15px 12px 15px 12px;
+    border-radius: 50%;
+    border: 2px solid #000000; 
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+/* content section */
+.gambar-banner {
+    margin-top: 4.5rem;
+}
+
+.gambar-banner img { 
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+.slider-img {
+    display: inline-block;
+    animation: 40s slide infinite linear ;
+}
+
+.slider-img img{
+    height: 275px;
+    filter: brightness(65%);
+}
+
+.container-slider{
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.inner-text {
+    position: absolute;
+    bottom: 25px; /* Ubah nilai top ke bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Mengubah transform untuk perpindahan horizontal saja */
+    background-color: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* animasi navbar */
+.navbar-nav .nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #103056; /* Warna garis */
+    transition: width 0.3s ease-in-out;
+    bottom: 0;
+    left: 0;
+}
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+.navbar-nav .nav-link.active::after {
+    width: 100%;
 }
