@@ -79,52 +79,93 @@
     align-items: center;
 }
 
-/* Media query for mobile view */
-@media (max-width: 768px) {
+/* Styles for small devices (phones) */
+@media only screen and (max-width: 600px) {
+    /* Add your styles for small devices here */
+    body {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
     .out-layer {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      padding: 10px;
+      align-items: center;
+      width: 100%;
     }
-
     .side-left {
-        position: relative;
-        width: 100%;
-        height: 50%;
+      order: 1;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
     }
-
-    .side-right {
-        position: absolute;
-        top: 50%;
-        width: 90%;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transform: translateY(-50%);
-    }
-
     .side-left img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+      width: 398px;
+      height: 237px;
+      border-radius: 15px;
+      object-fit: cover;
     }
-}
-
-
-
-
-
-/* @media (max-width: 576px) {
+    .side-right {
+      order: 2;
+        width: 100%;
+        max-width: 400px; /* Optional: limit the max width of the form */
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -20px; /* Remove top margin */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #fff;
+    }
     .login-container {
-        padding: 10px;
+      padding: 10px;
     }
     .login-container h2 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-} */
-
-/* CSS */
-/* Styles for small devices (phones) */
+    .btn-login {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    .forgot-pass p, .text-under-button a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Styles for medium devices (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Add your styles for medium devices here */
+    body {
+      font-size: 16px;
+    }
+  
+    .login-container {
+      padding: 20px;
+    }
+  
+    .login-container h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Styles for large devices (desktops) */
+  @media only screen and (min-width: 1025px) {
+    /* Add your styles for large devices here */
+    body {
+      font-size: 18px;
+    }
+  
+    .login-container {
+      padding: 30px;
+    }
+  
+    .login-container h2 {
+      font-size: 2.5rem;
+    }
+  }
