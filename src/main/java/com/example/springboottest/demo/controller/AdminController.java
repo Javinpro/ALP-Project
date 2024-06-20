@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3306")
 @RequestMapping("/api/admin")
 public class AdminController {
 

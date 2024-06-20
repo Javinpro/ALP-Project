@@ -2,6 +2,9 @@ package com.example.springboottest.demo.controller;
 
 import com.example.springboottest.demo.entity.User;
 import com.example.springboottest.demo.repository.UserRepository;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -54,5 +57,15 @@ public class UserController {
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable Integer id) {
         userRepository.deleteById(id);
+    }
+
+     @GetMapping("/search")
+    public ResponseEntity<?> getUserByUsername(@RequestParam String username) {
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isPresent()) {
+            return ResponseEntity.ok(user.get());
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not found with username: " + username);
+        }
     }
 }

@@ -29,7 +29,7 @@ public class GalleryController {
         if (gallery.isPresent()) {
             return gallery.get();
         } else {
-            throw new RuntimeException("Galeri tidak ditemukan dengan ID: " + id);
+            throw new RuntimeException("Gallery not found with ID: " + id);
         }
     }
 
@@ -41,7 +41,7 @@ public class GalleryController {
     @PutMapping("/{id}")
     public Gallery updateImage(@PathVariable Integer id, @RequestBody Gallery galleryDetails) {
         Gallery gallery = galleryRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Galeri tidak ditemukan dengan ID: " + id));
+                .orElseThrow(() -> new RuntimeException("Gallery not found with ID: " + id));
 
         gallery.setIdUser(galleryDetails.getIdUser());
         gallery.setImage(galleryDetails.getImage());
@@ -54,7 +54,7 @@ public class GalleryController {
     @DeleteMapping("/{id}")
     public void deleteGallery(@PathVariable Integer id) {
         Gallery gallery = galleryRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Galeri tidak ditemukan dengan ID:: " + id));
+                .orElseThrow(() -> new RuntimeException("Gallery not found with ID: " + id));
         galleryRepository.delete(gallery);
     }
 }

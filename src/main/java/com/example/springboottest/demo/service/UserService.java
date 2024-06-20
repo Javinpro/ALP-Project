@@ -1,8 +1,10 @@
 package com.example.springboottest.demo.service;
 
+import com.example.springboottest.demo.controller.RegisterRequest;
 import com.example.springboottest.demo.entity.User;
 import com.example.springboottest.demo.repository.UserRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,6 +13,8 @@ import java.util.Optional;
 public class UserService {
 
     private final UserRepository userRepository;
+    private PasswordEncoder passwordEncoder;
+
 
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -49,4 +53,22 @@ public class UserService {
     public void deleteUser(Integer id) {
         userRepository.deleteById(id);
     }
+    
+    public Optional<User> findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
+
+    public void registerUser(RegisterRequest registerRequest) throws Exception {
+        if (userRepository.existsByUsername(registerRequest.getUsername())) {
+            throw new Exception("Username already exists");
+        }
+
+        User user = new User();
+        user.setUsername(registerRequest.getUsername());
+        user.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
+        user.setEmail(registerRequest.getEmail());
+
+        userRepository.save(user);
+    }
 }
+
