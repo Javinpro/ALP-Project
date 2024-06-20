@@ -8,6 +8,7 @@
 /* content section */
 .gambar-banner {
   margin-top: 4.5rem;
+  margin-bottom: 5rem;
 }
 
 .gambar-banner img {
@@ -26,11 +27,14 @@
 }
 
 .container-slider {
-  margin-top: 2rem;
   overflow: hidden;
   padding: 30px 0;
   white-space: nowrap;
   position: relative;
+}
+
+.container-slider .slider-img:hover {
+  filter: brightness(125%);
 }
 
 @keyframes slide {
@@ -53,6 +57,7 @@
   font-size: 2rem;
   border-radius: 5px;
   z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* Optional: Add shadow to text for better readability */
 }
 
 /* animasi teks dalam gambar */
@@ -154,6 +159,12 @@
   margin-top: 2rem;
 }
 
+.container-to-browse img:hover {
+  filter: brightness(125%);
+}
+
+
+
 .inner-part-1 {
   padding: 5rem;
   filter: brightness(60%);
@@ -187,5 +198,24 @@
   text-align: center;
 }
 
-.card-pulau-1 {
+.container-to-browse {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5rem;
+}
+.inner-text-2 {
+  position: absolute;
+  top: 81%; /* Adjust this value to move the text vertically */
+  left: 50%; /* Adjust this value to move the text horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: white; /* Adjust the text color for better visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.5); /* Optional: Add shadow to text for better readability */
+  z-index: 2; /* Ensure the text is on top */
+  font-size: 2rem;
+}
+
+.inner-part-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
