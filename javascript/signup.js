@@ -26,6 +26,24 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 
     // Reset form setelah data disimpan
     document.getElementById('signupForm').reset();
+
+    // Fetch untuk mengirim data ke server
+    fetch('http://localhost:8081/api/users', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Sign Up successful');
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        alert('Sign Up failed');
+    });
 });
 
 // Toggle password visibility
@@ -37,4 +55,4 @@ document.querySelector('.toggle-pass').addEventListener('click', function() {
     // Toggle the eye icon
     this.textContent = type === 'password' ? 'visibility' : 'visibility_off';
 });
-
+    

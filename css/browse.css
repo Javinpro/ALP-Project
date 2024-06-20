@@ -5,109 +5,50 @@
     font-size: 15.5px;
 }
 
-
-
-/* navbar section */
-.container-fluid a {
-    margin-left: 20px;
+.carousel-item img {
+    filter: brightness(60%);
 }
-.navbar {
-    background-color: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+.container-content-2 {
+    margin-top: 4rem;
 }
-.navbar-nav a {
-    margin-top: 5px;
+
+.card-section {
+    margin-top: 2rem;
+}
+
+.card-section .card {
+    width: 18rem;
+}
+
+.card-section .card img{
+    height: 18rem;
+    filter: brightness(65%);
+}
+
+.teks-dalam h5 {
     font-weight: 550;
-}
-.navbar-nav {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-.button-account {
-    margin-right: 20px;
-}
-.login-button {
-    background-color: white;
-    border: 2px solid #103056;
-    border-radius: 5px;
-    padding: 9px 20px;
-    margin-right: -10px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #103056;
-}
-.signup-button {
-    background-color: #103056;
-    border: 2px solid #103056;
-    border-radius: 5px;
-    padding: 9px 20px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #ffffff;
+    font-size: 2.2rem;
 }
 
-/* animasi navbar */
-.navbar-nav .nav-link {
-    position: relative;
-    padding-bottom: 5px;
-    transition: color 0.3s ease-in-out;
-}
-.navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    background: #103056; /* warna garis */
-    transition: width 0.3s ease-in-out;
-    bottom: 0;
-    left: 0;
-}
-.navbar-nav .nav-link:hover::after {
-    width: 100%;
-}
-.navbar-nav .nav-link.active::after {
-    width: 100%;
+.teks-dalam {
+    margin-left: -4.5rem;
 }
 
-/* footer section */
-.footer-part {
-    margin-top: 10rem;
+.teks-dalam span {
+    font-size: 3.5rem;
 }
-.inner-footer {
-    display: flex;
-    justify-content: space-between;
-    gap: 18.5rem;
-    padding: 2rem;
+
+.teks-dalam p{
+    font-size: 2.5rem;
 }
-.part-atas-footer {
-    display: flex;
-    align-items: center;
-}
-.part-atas-footer img {
-    max-width: 100px;
-    height: auto;
-}
-.part-atas-footer p {
-    margin: 0;
-    padding: 0;
-    margin-left: 3rem;
-}
-.card-text {
-    margin-top: 1rem;
-}
-.button-part {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-.button-ig a{
-    background-color: #ffffff;
-    color: #000000; 
-    padding: 15px 12px 15px 12px;
-    border-radius: 50%;
-    border: 2px solid #000000; 
-    cursor: pointer;
+
+.linked-card {
     text-decoration: none;
 }
+
+.teks-dalam-2 {
+    display: flex;
+    gap: 10px;
+}
+

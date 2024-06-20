@@ -1,56 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 * {
-    font-family: 'Outfit';
-    font-size: 15.5px;
-}
- 
-/* content section */
-.gambar-banner {
-    margin-top: 4.5rem;
+  font-family: "Outfit";
+  font-size: 15.5px;
 }
 
-.gambar-banner img { 
-    width: 100%;
-    filter: brightness(0.5);
+/* content section */
+.gambar-banner {
+  margin-top: 4.5rem;
+}
+
+.gambar-banner img {
+  width: 100%;
+  filter: brightness(0.5);
 }
 
 .slider-img {
-    display: inline-block;
-    animation: 40s slide infinite linear ;
+  display: inline-block;
+  animation: 40s slide infinite linear;
 }
 
-.slider-img img{
-    height: 275px;
-    filter: brightness(65%);
+.slider-img img {
+  height: 275px;
+  filter: brightness(65%);
 }
 
-.container-slider{
-    overflow: hidden;
-    padding: 30px 0;
-    white-space: nowrap;
-    position: relative;
+.container-slider {
+  margin-top: 2rem;
+  overflow: hidden;
+  padding: 30px 0;
+  white-space: nowrap;
+  position: relative;
 }
 
 @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .inner-text {
-    position: absolute;
-    bottom: 25px; /* Ubah nilai top ke bottom */
-    left: 50%;
-    transform: translateX(-50%); /* Mengubah transform untuk perpindahan horizontal saja */
-    background-color: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 2rem;
-    border-radius: 5px;
-    z-index: 1;
+  position: absolute;
+  bottom: 25px; /* Ubah nilai top ke bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Mengubah transform untuk perpindahan horizontal saja */
+  background-color: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 5px;
+  z-index: 1;
 }
 
+/* animasi teks dalam gambar */
+.image-container {
+  position: relative;
+}
+
+.img-upper {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-animasi-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1d3557;
+}
+
+#spare-time {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #a8dadc;
+}
+
+.roller #rolltext {
+  color: white;
+  font-size: 6rem;
+  font-weight: 550;
+  position: absolute;
+  top: 0;
+  animation: slide2 5s infinite;
+}
+
+@keyframes slide2 {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .roller {
+    height: 2.6rem;
+    line-height: 2.125rem;
+  }
+
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -2.125rem;
+    }
+    50% {
+      top: -4.25rem;
+    }
+    72.5% {
+      top: -6.375rem;
+    }
+  }
+}
+
+.container-to-browse {
+  margin-top: 2rem;
+}
+
+.inner-part-1 {
+  padding: 5rem;
+  filter: brightness(60%);
+}
+
+.inner-part-1 img {
+  width: 100%;
+  height: auto;
+}
+
+/* container to browse  */
+
+/* container-partner */
+.container-partner h2 {
+  color: black;
+  text-align: center;
+}
+
+.partner-1 {
+  /* padding: 3rem; */
+  text-align: center;
+}
+
+.partner-1 a {
+  text-decoration: none;
+}
+
+.partner-1 img {
+  width: 25rem;
+  height: auto;
+  text-align: center;
+}
+
+.card-pulau-1 {
+}
