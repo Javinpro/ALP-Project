@@ -1,25 +1,31 @@
-document.getElementById('load-more').addEventListener('click', function(e) {
-    e.preventDefault();
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
     
-    // Create a new AJAX request
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'load_more_images.php', true);
-    xhr.onload = function() {
-        if (this.status === 200) {
-            // Parse the response JSON
-            var images = JSON.parse(this.responseText);
+    var input = document.getElementById('imageUpload');
+    var files = input.files;
 
-            // Get the gallery grid element
-            var galleryGrid = document.getElementById('gallery-grid');
+    // Loop through each selected file
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
 
-            // Loop through the images and append them to the gallery grid
-            images.forEach(function(image) {
-                var galleryItem = document.createElement('div');
-                galleryItem.classList.add('gallery-item');
-                galleryItem.innerHTML = '<img src="' + image.image_url + '" alt="Gallery Image">';
-                galleryGrid.appendChild(galleryItem);
-            });
+        // Check if the file is a JPG
+        if (file.type === 'image/jpeg') {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                var imageGallery = document.getElementById('imageGallery');
+                var imageElement = document.createElement('img');
+                imageElement.src = e.target.result;
+                imageElement.classList.add('img-thumbnail');
+                imageGallery.appendChild(imageElement);
+            };
+
+            reader.readAsDataURL(file);
+        } else {
+            alert('Please select JPG images only.');
         }
-    };
-    xhr.send();
+    }
+
+    // Reset file input after processing
+    this.reset();
 });

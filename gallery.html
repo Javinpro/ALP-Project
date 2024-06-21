@@ -40,6 +40,24 @@
         </div>
       </nav>
 
+      <div class="container">
+        <h2 class="text-center mb-4">Our Gallery.</h2>
+        <form id="uploadForm">
+            <div class="form-group">
+              <div class="upload-img">
+                <label for="imageUpload">Upload your experience here ! </label><br>
+                <input type="file" class="form-control-file" id="imageUpload" accept=".jpg" multiple>
+              </div>
+                <button type="submit" class="button-submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="image-gallery" id="imageGallery">
+            <!-- Uploaded images will be displayed here -->
+        </div>
+    </div>
+
+
       <!-- footer part -->
       <div class="card footer-part">
         <div class="card-body">
@@ -74,5 +92,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="javascript/navbar-section.js"></script>
+    <script src="javascript/gallery.js"></script>
+
 </body>
 </html>

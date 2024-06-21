@@ -5,3 +5,57 @@
     font-size: 15.5px;
 }
 
+.container {
+    margin-top: 6rem;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-gallery img {
+    max-width: 500px; /* Ukuran maksimal gambar large */
+    max-height: 400px; /* Tinggi gambar tetap agar proporsional */
+    margin: 10px; /* Jarak antar gambar */
+    border: 1px solid #ddd; /* Garis pinggir */
+    border-radius: 5px; /* Sudut bulat */
+    transition: transform 0.2s; /* Animasi saat hover */
+}
+.image-gallery img:hover {
+    transform: scale(1.1); /* Perbesar gambar saat dihover */
+}
+
+.form-group {
+    border: 2px solid #103056;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.form-group label {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.form-group input {
+    border: 2px dashed grey;
+    padding: 8px;
+
+}
+
+.button-submit {
+    margin-top: 2rem;
+    padding: 6px;
+    width: 100%;
+    background-color: #103056;
+    color: white;
+    border: 2px solid #103056;
+}
+
+.button-submit:hover {
+    background-color: #ffffff;
+    color: #103056;
+    border: 2px solid #103056;
+    font-weight: 550;
+}
