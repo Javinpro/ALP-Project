@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: 'Outfit';
+    font-size: 15.5px;
+}
+
+.teks-dalam h5 {
+    font-weight: 550;
+    font-size: 2.2rem;
+}
+
+.teks-dalam {
+    margin-left: -4.5rem;
+}
+
+.teks-dalam span {
+    font-size: 3.5rem;
+}
+
+.teks-dalam p{
+    font-size: 2.5rem;
+}
+
+.teks-dalam-2 {
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.carousel-item {
+    margin-top: 4.5rem;
+}
+
+.carousel-item img {
+    filter: brightness(75%);
+}
+
+.title-section h2 {
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.title-section hr {
+    border: 2px solid #000000;
+    background-color: #000000;
+}
+
+.content-1-text {
+    margin-top: 3rem;
+}
+
+.content-1-img{
+    padding: 5rem;
+    margin-top: -4rem;
+    filter: brightness(90%);
+}
+
+.map-container {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.map-embed {
+    width: 100%;
+}
+
+.input-section {
+    border: 3px solid #103056;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.input-section textarea {
+    width: 100%;
+    border: 2px dashed grey;
+    border-radius: 1rem;
+    padding: 1.2rem;
+}
+
+.rating-section {
+    padding: 1.2rem;
+    margin-left: -1rem;
+}
+
+.input-section button {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #103056;
+    border: 2px solid #103056;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.input-section button:hover {
+    background-color: #ffffff;
+    border: 2px solid #103056;
+    color: #103056;
+}
+
+.review-list {
+    margin-top: 3rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.title-section-2 {
+    margin-top: 10rem;
+}
+
+.cards-wrapper {
+    display: flex;
+}
+
+.linked-card {
+    text-decoration: none;
+}   
+
+.card-section {
+    margin-top: 2rem;
+}
+
+.card-section .card {
+    width: 18rem;
+}
+
+.card-section .card img{
+    height: 18rem;
+    filter: brightness(65%);
+}

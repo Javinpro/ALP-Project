@@ -5,6 +5,10 @@
     font-size: 15.5px;
 }
 
+.carousel-item {
+    margin-top: 4.5rem;
+}
+
 .carousel-item img {
     filter: brightness(60%);
 }
