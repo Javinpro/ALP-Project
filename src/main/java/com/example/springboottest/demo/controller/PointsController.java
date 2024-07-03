@@ -37,7 +37,7 @@ public class PointsController {
         Points points = pointsRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Points not found with id: " + id));
 
-        points.setIdUser(pointsDetails.getIdUser());
+        points.setUser(pointsDetails.getUser());
         points.setPoints(pointsDetails.getPoints());
         points.setReason(pointsDetails.getReason());
         points.setCreatedAt(pointsDetails.getCreatedAt());

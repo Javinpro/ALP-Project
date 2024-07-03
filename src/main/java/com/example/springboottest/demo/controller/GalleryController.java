@@ -43,7 +43,7 @@ public class GalleryController {
         Gallery gallery = galleryRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Gallery not found with ID: " + id));
 
-        gallery.setIdUser(galleryDetails.getIdUser());
+        gallery.setUser(galleryDetails.getUser());
         gallery.setImage(galleryDetails.getImage());
         gallery.setDescription(galleryDetails.getDescription());
         gallery.setApproved(galleryDetails.getApproved());

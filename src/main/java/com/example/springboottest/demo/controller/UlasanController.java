@@ -37,7 +37,7 @@ public class UlasanController {
         Ulasan ulasan = ulasanRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Ulasan not found with id: " + id));
 
-        ulasan.setIdUser(ulasanDetails.getIdUser());
+        ulasan.setUser(ulasanDetails.getUser());
         ulasan.setTeksUlasan(ulasanDetails.getTeksUlasan());
         ulasan.setRating(ulasanDetails.getRating());
         ulasan.setCreatedAt(ulasanDetails.getCreatedAt());

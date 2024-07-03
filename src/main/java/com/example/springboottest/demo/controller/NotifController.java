@@ -37,7 +37,7 @@ public class NotifController {
         Notifications notifications = notifRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Notification not found with id: " + id));
 
-        notifications.setIdUser(notificationsDetails.getIdUser());
+        notifications.setUser(notificationsDetails.getUser());
         notifications.setMessage(notificationsDetails.getMessage());
         notifications.setRead(notificationsDetails.getRead());
         notifications.setCreatedAt(notificationsDetails.getCreatedAt());

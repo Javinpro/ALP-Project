@@ -11,8 +11,9 @@ public class Ulasan {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUlasan;
 
-    @Column(nullable = false)
-    private Integer idUser;
+    @ManyToOne
+    @JoinColumn(name = "id_user", nullable = false)
+    private User user;
 
     @Column(nullable = false)
     private String teksUlasan;
@@ -28,9 +29,9 @@ public class Ulasan {
     public Ulasan() {
     }
 
-    public Ulasan(Integer idUlasan, Integer idUser, String teksUlasan, Integer rating, Time createdAt) {
+    public Ulasan(Integer idUlasan, User user, String teksUlasan, Integer rating, Time createdAt) {
         this.idUlasan = idUlasan;
-        this.idUser = idUser;
+        this.user = user;
         this.teksUlasan = teksUlasan;
         this.rating = rating;
         this.createdAt = createdAt;
@@ -44,12 +45,12 @@ public class Ulasan {
         this.idUlasan = idUlasan;
     }
 
-    public Integer getIdUser() {
-        return idUser;
+    public User getUser() {
+        return user;
     }
 
-    public void setIdUser(Integer idUser) {
-        this.idUser = idUser;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getTeksUlasan() {

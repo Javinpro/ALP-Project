@@ -11,8 +11,9 @@ public class Notifications {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idNotif;
 
-    @Column(nullable = false)
-    private Integer idUser;
+    @ManyToOne
+    @JoinColumn(name = "id_user", nullable = false)
+    private User user;
 
     @Column(nullable = false)
     private String message;
@@ -28,9 +29,9 @@ public class Notifications {
     public Notifications() {
     }
 
-    public Notifications(Integer idNotif, Integer idUser, String message, Boolean isRead, Time createdAt) {
+    public Notifications(Integer idNotif, User user, String message, Boolean isRead, Time createdAt) {
         this.idNotif = idNotif;
-        this.idUser = idUser;
+        this.user = user;
         this.message = message;
         this.isRead = isRead;
         this.createdAt = createdAt;
@@ -43,14 +44,14 @@ public class Notifications {
     public void setIdNotif(Integer idNotif) {
         this.idNotif = idNotif;
     }
-
-    public Integer getIdUser() {
-        return idUser;
+    public User getUser() {
+        return user;
     }
 
-    public void setIdUser(Integer idUser) {
-        this.idUser = idUser;
+    public void setUser(User user) {
+        this.user = user;
     }
+
 
     public String getMessage() {
         return message;

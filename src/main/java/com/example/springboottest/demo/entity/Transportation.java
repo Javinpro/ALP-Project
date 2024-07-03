@@ -16,16 +16,21 @@ public class Transportation {
 
     @Column(nullable = false)
     private Time tglKapal;
+    
+    @ManyToOne
+    @JoinColumn(name = "id_admin", nullable = false)
+    private Admin admin;
 
     // Constructors, getters, and setters
 
     public Transportation() {
     }
 
-    public Transportation(Integer idTransport, String name, Time tglKapal) {
+    public Transportation(Integer idTransport, String name, Time tglKapal, Admin admin) {
         this.idTransport = idTransport;
         this.name = name;
         this.tglKapal = tglKapal;
+        this.admin = admin;
     }
 
     public Integer getIdTransport() {
@@ -50,5 +55,13 @@ public class Transportation {
 
     public void setTglKapal(Time tglKapal) {
         this.tglKapal = tglKapal;
+    }
+
+    public Admin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
     }
 }

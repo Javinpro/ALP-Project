@@ -10,9 +10,10 @@ public class Gallery {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idImage;
 
-    @Column(nullable = false)
-    private Integer idUser;
-
+    @ManyToOne
+    @JoinColumn(name = "id_user", nullable = false)
+    private User user;
+    
     @Lob
     @Column(nullable = false)
     private byte[] image;
@@ -28,9 +29,9 @@ public class Gallery {
     public Gallery() {
     }
 
-    public Gallery(Integer idImage, Integer idUser, byte[] image, String description, Boolean isApproved) {
+    public Gallery(Integer idImage, User user, byte[] image, String description, Boolean isApproved) {
         this.idImage = idImage;
-        this.idUser = idUser;
+        this.user = user;
         this.image = image;
         this.description = description;
         this.isApproved = isApproved;
@@ -44,12 +45,12 @@ public class Gallery {
         this.idImage = idImage;
     }
 
-    public Integer getIdUser() {
-        return idUser;
+    public User getUser() {
+        return user;
     }
 
-    public void setIdUser(Integer idUser) {
-        this.idUser = idUser;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public byte[] getImage() {

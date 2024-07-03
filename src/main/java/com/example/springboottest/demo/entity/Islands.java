@@ -23,17 +23,22 @@ public class Islands {
     @Column(nullable = false)
     private String location;
 
+    @ManyToOne
+    @JoinColumn(name = "id_admin", nullable = false)
+    private Admin admin;
+
     // Constructors, getters, and setters
 
     public Islands() {
     }
 
-    public Islands(Integer idIslands, String nameIslands, String description, byte[] image, String location) {
+    public Islands(Integer idIslands, String nameIslands, String description, byte[] image, String location, Admin admin) {
         this.idIslands = idIslands;
         this.nameIslands = nameIslands;
         this.description = description;
         this.image = image;
         this.location = location;
+        this.admin = admin;
     }
 
     public Integer getIdIslands() {
@@ -74,5 +79,13 @@ public class Islands {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public Admin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
     }
 }

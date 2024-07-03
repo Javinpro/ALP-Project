@@ -11,8 +11,9 @@ public class Points {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idPoint;
 
-    @Column(nullable = false)
-    private Integer idUser;
+    @ManyToOne
+    @JoinColumn(name = "id_user", nullable = false)
+    private User user;
 
     @Column(nullable = false)
     private Integer points;
@@ -28,9 +29,9 @@ public class Points {
     public Points() {
     }
 
-    public Points(Integer idPoint, Integer idUser, Integer points, String reason, Time createdAt) {
+    public Points(Integer idPoint, User user, Integer points, String reason, Time createdAt) {
         this.idPoint = idPoint;
-        this.idUser = idUser;
+        this.user = user;
         this.points = points;
         this.reason = reason;
         this.createdAt = createdAt;
@@ -44,12 +45,12 @@ public class Points {
         this.idPoint = idPoint;
     }
 
-    public Integer getIdUser() {
-        return idUser;
+    public User getUser() {
+        return user;
     }
 
-    public void setIdUser(Integer idUser) {
-        this.idUser = idUser;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Integer getPoints() {

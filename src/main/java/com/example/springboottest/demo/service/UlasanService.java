@@ -1,6 +1,7 @@
 package com.example.springboottest.demo.service;
 
 import com.example.springboottest.demo.entity.Ulasan;
+import com.example.springboottest.demo.entity.User;
 import com.example.springboottest.demo.repository.UlasanRepository;
 import org.springframework.stereotype.Service;
 
@@ -25,20 +26,20 @@ public class UlasanService {
         return ulasanRepository.findById(id);
     }
 
-    public Ulasan createUlasan(Integer idUser, String teksUlasan, Integer rating, Time createdAt) {
+    public Ulasan createUlasan(User user, String teksUlasan, Integer rating, Time createdAt) {
         Ulasan ulasan = new Ulasan();
-        ulasan.setIdUser(idUser);
+        ulasan.setUser(user);
         ulasan.setTeksUlasan(teksUlasan);
         ulasan.setRating(rating);
         ulasan.setCreatedAt(createdAt);
         return ulasanRepository.save(ulasan);
     }
 
-    public Ulasan updateUlasan(Integer id, Integer idUser, String teksUlasan, Integer rating, Time createdAt) {
+    public Ulasan updateUlasan(Integer id, User user, String teksUlasan, Integer rating, Time createdAt) {
         Ulasan ulasan = ulasanRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Ulasan not found with id: " + id));
 
-        ulasan.setIdUser(idUser);
+        ulasan.setUser(user);
         ulasan.setTeksUlasan(teksUlasan);
         ulasan.setRating(rating);
         ulasan.setCreatedAt(createdAt);

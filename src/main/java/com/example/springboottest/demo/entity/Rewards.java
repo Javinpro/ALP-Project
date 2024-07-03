@@ -26,18 +26,24 @@ public class Rewards {
     @Column(nullable = false)
     private Time createdAt;
 
+    @ManyToOne
+    @JoinColumn(name = "id_admin", nullable = false)
+    private Admin admin;
+
+
     // Constructors, getters, and setters
 
     public Rewards() {
     }
 
-    public Rewards(Integer idReward, String name, String description, Integer pointsRequired, Integer stock, Time createdAt) {
+    public Rewards(Integer idReward, String name, String description, Integer pointsRequired, Integer stock, Time createdAt, Admin admin) {
         this.idReward = idReward;
         this.name = name;
         this.description = description;
         this.pointsRequired = pointsRequired;
         this.stock = stock;
         this.createdAt = createdAt;
+        this.admin = admin;
     }
 
     public Integer getIdReward() {
@@ -86,5 +92,13 @@ public class Rewards {
 
     public void setCreatedAt(Time createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public Admin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
     }
 }
