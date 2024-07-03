@@ -49,7 +49,6 @@ public class UserController {
         user.setDateOfBirth(userDetails.getDateOfBirth());
         user.setAddress(userDetails.getAddress());
         user.setBio(userDetails.getBio());
-        user.setRole(userDetails.getRole());
 
         return userRepository.save(user);
     }

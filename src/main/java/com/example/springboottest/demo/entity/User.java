@@ -39,16 +39,12 @@ public class User {
     @Column
     private String bio;
 
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private UserRole role;
-
     // Constructors, getters, and setters
 
     public User() {
     }
 
-    public User(Integer idUser, String email, String password, String username, String firstName, String lastName, String phone, Time dateOfBirth, String address, String bio, UserRole role) {
+    public User(Integer idUser, String email, String password, String username, String firstName, String lastName, String phone, Time dateOfBirth, String address, String bio) {
         this.idUser = idUser;
         this.email = email;
         this.password = password;
@@ -59,7 +55,6 @@ public class User {
         this.dateOfBirth = dateOfBirth;
         this.address = address;
         this.bio = bio;
-        this.role = role;
     }
 
     public Integer getIdUser() {
@@ -141,15 +136,5 @@ public class User {
     public void setBio(String bio) {
         this.bio = bio;
     }
-
-    public UserRole getRole() {
-        return role;
-    }
-
-    public void setRole(UserRole role) {
-        this.role = role;
-    }
-    
-
     
 }
